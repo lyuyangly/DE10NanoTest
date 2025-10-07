@@ -1,0 +1,56 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/lyuyang/WORK/DE10NanoTest/HPS.qsys --synthesis=VERILOG --output-directory=/home/lyuyang/WORK/DE10NanoTest/HPS/synthesis --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading DE10NanoTest/HPS.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 17.0]
+Progress: Parameterizing module clk
+Progress: Adding hps [altera_hps 17.0]
+Progress: Parameterizing module hps
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 17.0]
+Progress: Parameterizing module onchip_memory
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: HPS.hps: HPS Main PLL counter settings: n = 0  m = 63
+Info: HPS.hps: HPS peripherial PLL counter settings: n = 0  m = 39
+Info: HPS.hps: Ensure that valid Cortex A9 boot code is available to the HPS system when enabling boot from FPGA and h2f_axi_master interface is connecting to slave component start at address 0x0.
+Info: HPS: Generating HPS "HPS" for QUARTUS_SYNTH
+Warning: hps.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: hps.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: hps.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: hps.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: hps: "Running  for module: hps"
+Info: hps: HPS Main PLL counter settings: n = 0  m = 63
+Info: hps: HPS peripherial PLL counter settings: n = 0  m = 39
+Info: hps: Ensure that valid Cortex A9 boot code is available to the HPS system when enabling boot from FPGA and h2f_axi_master interface is connecting to slave component start at address 0x0.
+Info: hps: "HPS" instantiated altera_hps "hps"
+Info: onchip_memory: Starting RTL generation for module 'HPS_onchip_memory'
+Info: onchip_memory:   Generation command is [exec /home/software/Altera/quartus/linux64/perl/bin/perl -I /home/software/Altera/quartus/linux64/perl/lib -I /home/software/Altera/quartus/sopc_builder/bin/europa -I /home/software/Altera/quartus/sopc_builder/bin/perl_lib -I /home/software/Altera/quartus/sopc_builder/bin -I /home/software/Altera/quartus/../ip/altera/sopc_builder_ip/common -I /home/software/Altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/software/Altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=HPS_onchip_memory --dir=/tmp/alt0367_7494460527455788313.dir/0001_onchip_memory_gen/ --quartus_dir=/home/software/Altera/quartus --verilog --config=/tmp/alt0367_7494460527455788313.dir/0001_onchip_memory_gen//HPS_onchip_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory: Done RTL generation for module 'HPS_onchip_memory'
+Info: onchip_memory: "HPS" instantiated altera_avalon_onchip_memory2 "onchip_memory"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "HPS" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "HPS" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "HPS" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps" instantiated altera_hps_io "hps_io"
+Info: onchip_memory_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "onchip_memory_s1_translator"
+Info: hps_h2f_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_h2f_axi_master_agent"
+Info: onchip_memory_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "onchip_memory_s1_agent"
+Info: onchip_memory_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "onchip_memory_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: onchip_memory_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "onchip_memory_s1_burst_adapter"
+Info: Reusing file /home/lyuyang/WORK/DE10NanoTest/HPS/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/lyuyang/WORK/DE10NanoTest/HPS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: HPS: Done "HPS" with 22 modules, 79 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,9 @@
+$PRJ_PATH/rtl/async_fifo.v
+$PRJ_PATH/rtl/RstSync.v
+$PRJ_PATH/rtl/I2C_Controller.v
+$PRJ_PATH/rtl/I2C_HDMI_Config.v
+$PRJ_PATH/rtl/I2C_WRITE_WDATA.v
+$PRJ_PATH/rtl/VGACtrlTop.v
+$PRJ_PATH/rtl/HDMI_PLL.v
+$PRJ_PATH/rtl/AxiMemRdCtrl.v
+$PRJ_PATH/rtl/DE10NanoTest.v
