@@ -503,7 +503,7 @@ set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_CK_N
 export_assignments
 
 # --------------------------------------------------------------------------------------------------
-execute_flow -compile
+#execute_flow -compile
 
 # --------------------------------------------------------------------------------------------------
 #quartus_map --read_settings_files=on  --write_settings_files=off $PROJECT -c $PROJECT
